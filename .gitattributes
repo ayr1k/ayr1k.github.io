@@ -1,0 +1,2 @@
+# Download checksums describe exact bytes, regardless of checkout platform.
+public/themes/* -text
