@@ -63,3 +63,9 @@ The home/download pages link to both stable 1.1.0 releases. `#/themes` provides 
 下载页指向两款产品的 1.1.1 正式版。主题页提供更新后的双语指南、composition-v1 字段规范与独立的 AMBER Alloy 主题；原 1.1.0 基础示例仍保留兼容性。
 
 Download links target both stable 1.1.1 releases. The theme hub includes updated bilingual guides, composition-v1 reference and the standalone AMBER Alloy theme; the original starter remains compatible with 1.1.0.
+
+## 1.1.2
+
+下载页同步 AMBER 与 AmberE 1.1.2 正式版。主题页提供带字体纵向偏移的 Alloy、中英帮助及更新后的字段规范，背景图片保持不变。
+
+Downloads target AMBER and AmberE 1.1.2. The theme hub provides Alloy with vertical text offset, bilingual help and the updated format reference; artwork remains unchanged.
