@@ -57,3 +57,9 @@ Release URLs are explicitly versioned in `src/App.jsx`. Language and reduced-mot
 首页与下载页指向两款 1.1.0 正式版。`#/themes` 提供中英双语主题帮助和制作资料，`#/features/themes` 介绍外观工作室。`public/themes/` 只包含公开帮助、规范和独立基础示例，不包含私人测试主题或图片。基础示例不预置进启动器。
 
 The home/download pages link to both stable 1.1.0 releases. `#/themes` provides bilingual help and authoring downloads; `#/features/themes` introduces Appearance Studio. `public/themes/` contains public documentation, schema and a standalone starter only. No private test themes or images are published or bundled.
+
+## 1.1.1
+
+下载页指向两款产品的 1.1.1 正式版。主题页提供更新后的双语指南、composition-v1 字段规范与独立的 AMBER Alloy 主题；原 1.1.0 基础示例仍保留兼容性。
+
+Download links target both stable 1.1.1 releases. The theme hub includes updated bilingual guides, composition-v1 reference and the standalone AMBER Alloy theme; the original starter remains compatible with 1.1.0.
