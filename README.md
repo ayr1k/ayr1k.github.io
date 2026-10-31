@@ -51,3 +51,9 @@ Release URLs are explicitly versioned in `src/App.jsx`. Language and reduced-mot
 
 
 
+
+## 1.1.0 外观与主题 / Appearance and themes
+
+首页与下载页指向两款 1.1.0 正式版。`#/themes` 提供中英双语主题帮助和制作资料，`#/features/themes` 介绍外观工作室。`public/themes/` 只包含公开帮助、规范和独立基础示例，不包含私人测试主题或图片。基础示例不预置进启动器。
+
+The home/download pages link to both stable 1.1.0 releases. `#/themes` provides bilingual help and authoring downloads; `#/features/themes` introduces Appearance Studio. `public/themes/` contains public documentation, schema and a standalone starter only. No private test themes or images are published or bundled.
