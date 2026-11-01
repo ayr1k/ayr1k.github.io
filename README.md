@@ -1,78 +1,53 @@
-# AMBER website
+# AMBER website / AMBER 官网
 
-AMBER 的独立产品网站，提供中文和英文页面。主页采用深绿与琥珀配色，包含产品实拍、功能入口、主题展示与常见问题；功能页采用普通滚动；下载页提供 AMBER / AmberE 安装包、源码和校验文件入口。
+[官方网站 / Website](https://ayr1k.github.io/) · [官方主题商城 / Official theme store](https://ayr1k.github.io/#/themes)
 
-## 本地运行
+AMBER 与 AmberE 的双语产品网站，提供功能介绍、使用帮助和 1.2.1 正式版下载。主页沿用深绿、琥珀配色与真实产品截图，使用自由滚动；功能与帮助页以阅读为主，不启用滚动吸附。
 
-需要 Node.js 和 pnpm。在本目录执行：
+A bilingual website for AMBER and AmberE, with features, guides and stable 1.2.1 downloads. The homepage uses a forest-green/amber palette and actual product screenshots. All pages scroll freely, without scroll snapping.
+
+## 本地开发 / Local development
+
+Requires Node.js and pnpm. Run in this directory:
 
 ```sh
 pnpm install --frozen-lockfile
 pnpm dev --host 127.0.0.1 --port 4188
 ```
 
-打开 `http://127.0.0.1:4188/`。
-
-## 静态发布
+## 发布 / Deployment
 
 ```sh
 pnpm build
 pnpm test:sites
 ```
 
-GitHub Pages 只需要发布 **dist/client** 内的内容。站点使用相对资源路径和 hash 路由，可放在用户主页或项目子目录，不需要服务器重写规则。部署前将 GitHub Pages 的产物目录设为 dist/client；不上传 node_modules、.qa 或 dist/server。
+`ayr1k/ayr1k.github.io` 的 `main` 分支通过 `.github/workflows/pages.yml` 自动构建并发布 `dist/client`。Hash 路由不依赖服务器重写。不要上传 node_modules、.qa 或本地账户数据。
 
-网站地址：https://ayr1k.github.io/ 。网站源码独立维护在 ayr1k/ayr1k.github.io，main 分支更新后由 GitHub Actions 自动构建并部署到 Pages，也可在 Actions 手动运行。
+The main branch of `ayr1k/ayr1k.github.io` deploys `dist/client` through the Pages workflow. Hash routing needs no server rewrite rules. Local dependencies and development profiles are excluded.
 
-## 内容维护
+## 主题商城 / Theme store
 
-- `src/App.jsx`：中英文文案、路由、功能说明、产品分支与 Release 下载地址。
-- `src/Home.jsx`：双语首页、功能入口与 FAQ。
-- `src/styles.css`、`src/emerald.css`：共享排版、深色视觉、响应式和动效。
-- `public/assets`：品牌、背景纹理、产品截图和本地字体。
-- `index.html`：页面基础描述与主题色。
+- `#/themes`：官方主题目录、真实预览、大图查看、下载和 SHA-256；所有网站内的 .ambtheme 下载按钮集中在这里。
+- `#/themes/help`：安装与制作帮助，双语帮助 ZIP、Schema 与示例 JSON。保留旧静态文件地址供已有链接使用，但不在其他页面重复展示主题下载按钮。
+- `src/theme-catalog.js`：主题目录数据。未来新增主题只需添加一个条目及对应文件，不必重写页面或加入占位商品。
+- `src/ThemeStore.jsx`、`src/theme-store.css`：商城、响应式主题列表与可键盘关闭的预览弹窗。
+- `public/themes`：官方主题、每个主题的 `.sha256`、真实预览图和制作参考文件。
 
-更新版本时同步更新首页版本号、下载页标签、两个产品的 Release tag 和安装包／源码包文件名。下载链接采用固定版本，不依赖第三方请求或访问者的 GitHub API 限额。
+`#/themes` is the single storefront for all in-site .ambtheme download buttons. `#/themes/help` contains authoring guidance and reference files. Old static addresses remain available for existing links. Add future themes through `src/theme-catalog.js`; the responsive grid expands automatically without placeholder products.
 
-主页在所有尺寸使用自由滚动，保留轻量视差和入场效果，不再自动吸附或归位。功能页始终使用普通滚动。页脚“减少动画”选项本地保存，并默认遵循操作系统偏好。语言偏好也只保存在本机，没有统计追踪、登录或表单收集。
+添加主题时提供唯一 id、中英文名称/简介/特点、主题版本、最低客户端版本、准确大小、版本化文件名和实机预览图。附上同名 `.sha256`，更新 `public/themes/SHA256SUMS.txt`；核对图片许可，确保截图不包含真实账户、私人存档或路径。
 
-## 视觉素材
+Each entry needs an id, bilingual copy and tags, theme/minimum-client versions, accurate size, a versioned package and an actual application preview. Include its `.sha256`, refresh the checksum list and verify asset permissions. Use demonstration data, never private account or save data.
 
-品牌沿用项目现有素材。深绿三角纹理为本网站的装饰背景。产品截图来自 1.2.0 正式版界面，使用隔离的示例实例，展示 Alloy 和经典浅色外观；没有使用真实用户账号或存档。截图内新闻属于 Minecraft 官方内容。Sarasa 字体许可随素材保留。
+Alloy 与 Nocturne 预览来自 AMBER 1.2.1 正式程序及隔离的演示实例。主题独立下载，不预置。主页的经典外观示意保留自 1.2.0；品牌与 Sarasa 字体许可随素材保留。
 
-字体按现有文案生成子集。增加文案后，可安装 Python 的 fonttools 与 brotli，然后执行 `python scripts/subset-fonts.py 原始字体目录` 更新；原始目录需包含 SarasaUiSC-Regular.woff2 和 SarasaUiSC-Bold.woff2。缺失字形仍有系统字体回退。
+Alloy and Nocturne previews show the public AMBER 1.2.1 build with isolated demonstration instances. Themes are separate downloads, not bundled. The classic appearance illustration on home remains from 1.2.0. Brand and Sarasa font notices are retained.
 
----
+## 内容维护 / Content maintenance
 
-Independent AMBER product website with Chinese and English copy. Run `pnpm install --frozen-lockfile` and `pnpm dev`; build with `pnpm build`. Publish only `dist/client` to GitHub Pages. Relative assets and hash routing support both account and project sites. Live site: https://ayr1k.github.io/ . Pushes to main build and deploy through GitHub Actions; manual deployment is also available.
+`src/App.jsx` controls routes, bilingual feature/help copy and pinned release links. `src/Home.jsx` contains the homepage and FAQ. Update both products' installer/source/tag links when releasing. Theme files are static downloads; no account, checkout or third-party API is needed.
 
-Release URLs are explicitly versioned in `src/App.jsx`. The bilingual homepage in `src/Home.jsx` uses a dark forest and amber palette, real product screenshots, feature links, a theme showcase and accessible FAQ disclosures. Language and reduced-motion preferences stay in local storage. The site does not collect accounts, forms or analytics. Product screenshots show the public 1.2.0 interface with isolated example data, without personal accounts or saves. News visible in the screenshot is Minecraft official content.
+增加文案后可用 `python scripts/subset-fonts.py 原始字体目录` 重建字体子集；原始目录须包含 SarasaUiSC-Regular.woff2 和 SarasaUiSC-Bold.woff2，需 fonttools 与 brotli。缺失字形仍有系统字体回退。
 
-
-
-
-
-
-## 1.1.0 外观与主题 / Appearance and themes
-
-首页与下载页指向两款 1.1.0 正式版。`#/themes` 提供中英双语主题帮助和制作资料，`#/features/themes` 介绍外观工作室。`public/themes/` 只包含公开帮助、规范和独立基础示例，不包含私人测试主题或图片。基础示例不预置进启动器。
-
-The home/download pages link to both stable 1.1.0 releases. `#/themes` provides bilingual help and authoring downloads; `#/features/themes` introduces Appearance Studio. `public/themes/` contains public documentation, schema and a standalone starter only. No private test themes or images are published or bundled.
-
-## 1.1.1
-
-下载页指向两款产品的 1.1.1 正式版。主题页提供更新后的双语指南、composition-v1 字段规范与独立的 AMBER Alloy 主题；原 1.1.0 基础示例仍保留兼容性。
-
-Download links target both stable 1.1.1 releases. The theme hub includes updated bilingual guides, composition-v1 reference and the standalone AMBER Alloy theme; the original starter remains compatible with 1.1.0.
-
-## 1.1.2
-
-下载页同步 AMBER 与 AmberE 1.1.2 正式版。主题页提供带字体纵向偏移的 Alloy、中英帮助及更新后的字段规范，背景图片保持不变。
-
-Downloads target AMBER and AmberE 1.1.2. The theme hub provides Alloy with vertical text offset, bilingual help and the updated format reference; artwork remains unchanged.
-
-## 1.2.0
-
-下载入口指向 AMBER 与 AmberE 1.2.0 正式版。功能页新增个性化首页、日历/新闻、存储和实用工具；主题帮助说明按需展开的设置、直接应用和分区滚动。主题页提供 Alloy 1.2.0、双语帮助、基础示例和校验文件，旧版主题下载保留兼容用途。
-
-Download links target the AMBER and AmberE 1.2.0 stable releases. Feature pages cover personal home, calendar/news, storage and tools. Theme help explains progressive settings, direct application and section scrolling, with Alloy 1.2.0, bilingual guidance, starter and checksums. Older theme downloads remain available for compatibility.
+Language and reduced-motion preferences are saved locally. The site has no analytics, account collection or submission forms. Rebuild font subsets after adding copy using `scripts/subset-fonts.py` with the original Sarasa fonts; system fallback remains available.

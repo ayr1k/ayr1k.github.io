@@ -10,7 +10,7 @@ from fontTools.ttLib import TTFont
 
 source = Path(sys.argv[1])
 root = Path(__file__).resolve().parents[1]
-text = '\n'.join(path.read_text(encoding='utf-8-sig') for path in (root / 'src').rglob('*.jsx'))
+text = '\n'.join(path.read_text(encoding='utf-8-sig') for path in (root / 'src').rglob('*') if path.suffix in ('.jsx', '.js'))
 text += (root / 'index.html').read_text(encoding='utf-8-sig')
 text += ''.join(chr(i) for i in range(32, 127))
 for weight in ('Regular', 'Bold'):
