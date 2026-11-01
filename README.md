@@ -40,9 +40,13 @@ The main branch of `ayr1k/ayr1k.github.io` deploys `dist/client` through the Pag
 
 Each entry needs an id, bilingual copy and tags, theme/minimum-client versions, accurate size, a versioned package and an actual application preview. Include its `.sha256`, refresh the checksum list and verify asset permissions. Use demonstration data, never private account or save data.
 
-Alloy 与 Nocturne 预览来自 AMBER 1.2.1 正式程序及隔离的演示实例。主题独立下载，不预置。主页的经典外观示意保留自 1.2.0；品牌与 Sarasa 字体许可随素材保留。
+Alloy、Nocturne、Harvest（秋野）与 Verdant（青岚）预览来自 AMBER 1.2.1 发布构建及隔离的演示实例。主题独立下载，不预置，均兼容 AMBER 与 AmberE 1.2.1。秋野采用左侧导航与右侧标签分区，青岚采用顶部导航与下方日历／新闻分区。较矮窗口通过分区滚动查看更多内容。主页的经典外观示意保留自 1.2.0；品牌与 Sarasa 字体许可随素材保留。
 
-Alloy and Nocturne previews show the public AMBER 1.2.1 build with isolated demonstration instances. Themes are separate downloads, not bundled. The classic appearance illustration on home remains from 1.2.0. Brand and Sarasa font notices are retained.
+Alloy, Nocturne, Harvest and Verdant previews show the AMBER 1.2.1 release build with isolated demonstration instances. All four are separate downloads for AMBER and AmberE 1.2.1. Harvest uses left navigation and right-side tabs; Verdant uses top navigation and a lower calendar/news band. Shorter windows use section scrolling for additional content. The classic appearance illustration on home remains from 1.2.0. Brand and Sarasa font notices are retained.
+
+Harvest 与 Verdant 的背景为艺术化生成插画，非游戏实拍。主题配置采用 MPL-2.0，背景在适用权利范围内采用 CC BY 4.0，详见各主题包内的 LICENSE.txt。
+
+Harvest and Verdant backgrounds are generated artwork, not in-game captures. Theme configuration uses MPL-2.0; background artwork is offered under CC BY 4.0 to the extent rights apply. See LICENSE.txt in each package.
 
 ## 内容维护 / Content maintenance
 
