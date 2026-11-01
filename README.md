@@ -1,6 +1,6 @@
 # AMBER website
 
-AMBER 的独立产品网站，提供中文和英文页面。主页包含森林首屏、功能入口和产品分支介绍；功能页采用普通滚动；下载页提供 AMBER / AmberE 安装包、源码和校验文件入口。
+AMBER 的独立产品网站，提供中文和英文页面。主页采用深绿与琥珀配色，包含产品实拍、功能入口、主题展示与常见问题；功能页采用普通滚动；下载页提供 AMBER / AmberE 安装包、源码和校验文件入口。
 
 ## 本地运行
 
@@ -27,8 +27,9 @@ GitHub Pages 只需要发布 **dist/client** 内的内容。站点使用相对�
 ## 内容维护
 
 - `src/App.jsx`：中英文文案、路由、功能说明、产品分支与 Release 下载地址。
-- `src/styles.css`：排版、响应式和动效。
-- `public/assets`：品牌、森林视觉、产品界面插图和本地字体。
+- `src/Home.jsx`：双语首页、功能入口与 FAQ。
+- `src/styles.css`、`src/emerald.css`：共享排版、深色视觉、响应式和动效。
+- `public/assets`：品牌、背景纹理、产品截图和本地字体。
 - `index.html`：页面基础描述与主题色。
 
 更新版本时同步更新首页版本号、下载页标签、两个产品的 Release tag 和安装包／源码包文件名。下载链接采用固定版本，不依赖第三方请求或访问者的 GitHub API 限额。
@@ -37,7 +38,7 @@ GitHub Pages 只需要发布 **dist/client** 内的内容。站点使用相对�
 
 ## 视觉素材
 
-品牌沿用项目现有素材。森林为本网站制作的氛围插图。产品图通过现有 1.0 组件和示例实例渲染，标注为“界面示意”，没有使用真实用户账号或存档。Sarasa 字体许可随素材保留。
+品牌沿用项目现有素材。深绿三角纹理为本网站的装饰背景。产品截图来自 1.2.0 正式版界面，使用隔离的示例实例，展示 Alloy 和经典浅色外观；没有使用真实用户账号或存档。截图内新闻属于 Minecraft 官方内容。Sarasa 字体许可随素材保留。
 
 字体按现有文案生成子集。增加文案后，可安装 Python 的 fonttools 与 brotli，然后执行 `python scripts/subset-fonts.py 原始字体目录` 更新；原始目录需包含 SarasaUiSC-Regular.woff2 和 SarasaUiSC-Bold.woff2。缺失字形仍有系统字体回退。
 
@@ -45,7 +46,7 @@ GitHub Pages 只需要发布 **dist/client** 内的内容。站点使用相对�
 
 Independent AMBER product website with Chinese and English copy. Run `pnpm install --frozen-lockfile` and `pnpm dev`; build with `pnpm build`. Publish only `dist/client` to GitHub Pages. Relative assets and hash routing support both account and project sites. Live site: https://ayr1k.github.io/ . Pushes to main build and deploy through GitHub Actions; manual deployment is also available.
 
-Release URLs are explicitly versioned in `src/App.jsx`. Language and reduced-motion preferences stay in local storage. The site does not collect accounts, forms or analytics. The product illustration uses the existing 1.0 interface with example data.
+Release URLs are explicitly versioned in `src/App.jsx`. The bilingual homepage in `src/Home.jsx` uses a dark forest and amber palette, real product screenshots, feature links, a theme showcase and accessible FAQ disclosures. Language and reduced-motion preferences stay in local storage. The site does not collect accounts, forms or analytics. Product screenshots show the public 1.2.0 interface with isolated example data, without personal accounts or saves. News visible in the screenshot is Minecraft official content.
 
 
 
