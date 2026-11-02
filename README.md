@@ -2,9 +2,9 @@
 
 [官方网站 / Website](https://ayr1k.github.io/) · [官方主题商城 / Official theme store](https://ayr1k.github.io/#/themes)
 
-AMBER 与 AmberE 的双语产品网站，提供功能介绍、使用帮助和 1.2.1 正式版下载。主页沿用深绿、琥珀配色与真实产品截图，使用自由滚动；功能与帮助页以阅读为主，不启用滚动吸附。
+AMBER 与 AmberE 的双语产品网站，提供功能介绍、使用帮助和 1.2.2 正式版下载。主页沿用深绿、琥珀配色与真实产品截图，使用自由滚动；功能与帮助页以阅读为主，不启用滚动吸附。
 
-A bilingual website for AMBER and AmberE, with features, guides and stable 1.2.1 downloads. The homepage uses a forest-green/amber palette and actual product screenshots. All pages scroll freely, without scroll snapping.
+A bilingual website for AMBER and AmberE, with features, guides and stable 1.2.2 downloads. The homepage uses a forest-green/amber palette and actual product screenshots. All pages scroll freely, without scroll snapping.
 
 ## 本地开发 / Local development
 
@@ -55,3 +55,5 @@ Harvest and Verdant backgrounds are generated artwork, not in-game captures. The
 增加文案后可用 `python scripts/subset-fonts.py 原始字体目录` 重建字体子集；原始目录须包含 SarasaUiSC-Regular.woff2 和 SarasaUiSC-Bold.woff2，需 fonttools 与 brotli。缺失字形仍有系统字体回退。
 
 Language and reduced-motion preferences are saved locally. The site has no analytics, account collection or submission forms. Rebuild font subsets after adding copy using `scripts/subset-fonts.py` with the original Sarasa fonts; system fallback remains available.
+
+1.2.2: `#/features/downloads` introduces source selection, pause/resume and diagnostics. Theme files keep their existing versions and remain compatible. / 新增下载与恢复功能页；主题文件版本与兼容性保持不变。

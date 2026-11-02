@@ -7,6 +7,7 @@ const highlights=[
  {id:'recovery',icon:Database,title:['备份与恢复','Backup & recovery'],body:['先在独立副本中尝试新内容。备份重要实例，在需要时找到恢复的入口。','Try new content in an independent copy. Back up important instances and keep a way back when you need it.']},
 ];
 const questions=[
+ {q:['下载慢或中断了怎么办？','What if downloads are slow or interrupted?'],a:['在下载设置中选择自动、官方优先或中国大陆优化；任务中心支持下载阶段的暂停与继续，并提供连接诊断。支持续传时保留进度，所有文件仍需校验。','Choose Automatic, Official first or Mainland China optimized in download settings. Pause and resume download stages and diagnose connections in Tasks. Resume where supported; all files still require verification.'],href:'#/features/downloads',link:['了解下载与恢复','Explore downloads & recovery']},
  {q:['支持哪些系统？','Which systems are supported?'],a:['目前提供 Windows x64 安装包。游戏所需的 Java 会根据实例准备，具体游戏与模组要求仍取决于所选版本。','Windows x64 installers are available. AMBER prepares Java for each instance; game and mod requirements depend on the selected versions.'],href:'#/download',link:['查看下载选项','View downloads']},
  {q:['如何保留已有实例？','How do I keep my existing instances?'],a:['升级同一产品会保留游戏数据。更换电脑或数据位置前，先备份重要实例，再通过备份与恢复功能恢复到独立实例。','Upgrading the same product retains game data. Before moving computers or data locations, back up important instances and restore them as independent instances.'],href:'#/features/recovery',link:['了解备份与恢复','Explore backup & recovery']},
  {q:['主题可以在两个版本间使用吗？','Can I use themes in both editions?'],a:['可以。AMBER 与 AmberE 共用 .ambtheme 格式。导入前请检查主题的版本要求；主题只改变外观，不改变账号规则或游戏数据。','Yes. AMBER and AmberE share the .ambtheme format. Check the required launcher version before importing. Themes change appearance, not account rules or game data.'],href:'#/themes',link:['浏览官方主题','Browse official themes']},
@@ -22,9 +23,9 @@ export function Home({en}){
     <h1 id="hero-title">{t('你的世界，','Your world.')}<br/>{t('由你掌握。','Your way.')}</h1>
     <p className="hero-description">{t('创建实例、管理模组、定制外观。让每次出发，都更简单。','Create instances, manage mods, make it yours. Get ready for your next adventure.')}</p>
     <div className="hero-actions"><a href="#/download" className="button gold"><DownloadSimple size={21}/>{t('下载 AMBER','Download AMBER')}</a><a className="text-link" href="#/features">{t('探索功能','Explore features')}<ArrowUpRight size={19}/></a></div>
-    <p className="platform-line">Windows x64 <span>·</span> {t('免费开源','Free & open source')}</p>
+    <p className="platform-line">1.2.2 <span>·</span> Windows x64 <span>·</span> {t('免费开源','Free & open source')}</p>
    </div>
-   <figure className="hero-product wrap"><img src={asset('launcher-alloy-1.2.1.png')} width="1280" height="840" alt={t('AMBER 1.2.1 的 Alloy 首页：实例启动、游玩日历与新闻模块','AMBER 1.2.1 with Alloy: launch controls, play calendar and news')} fetchPriority="high"/><figcaption>{t('AMBER 1.2.1 · Alloy 主题','AMBER 1.2.1 · Alloy theme')}</figcaption></figure>
+   <figure className="hero-product wrap"><img src={asset('launcher-alloy-1.2.1.png')} width="1280" height="840" alt={t('AMBER 的 Alloy 首页：实例启动、游玩日历与新闻模块','AMBER with Alloy: launch controls, play calendar and news')} fetchPriority="high"/><figcaption>{t('AMBER · Alloy 主题','AMBER · Alloy theme')}</figcaption></figure>
   </section>
   <section className="home-features wrap" aria-labelledby="feature-title">
    <div className="section-intro"><h2 id="feature-title">{t('从准备，到开玩。','From setup to play.')}</h2><p>{t('简单的步骤，完整的体验。让 Minecraft 按你的方式运行。','A simpler setup. A complete experience. Play Minecraft your way.')}</p></div>
