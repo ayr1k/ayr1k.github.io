@@ -58,4 +58,6 @@ Language and reduced-motion preferences are saved locally. The site has no analy
 
 1.2.2: `#/features/downloads` introduces source selection, pause/resume and diagnostics. Theme files keep their existing versions and remain compatible. / 新增下载与恢复功能页；主题文件版本与兼容性保持不变。
 
-1.3.0: `#/features/modpacks` explains local MRPACK/content ZIP import, format differences and restart recovery. / 新增本地整合包导入说明，解释格式区别与重启恢复。下载页同步 1.3.0，主题文件保持原样。
+1.2.3: `#/features/modpacks` explains local MRPACK/content ZIP import, format differences and restart recovery. / 新增本地整合包导入说明，解释格式区别与重启恢复。下载页同步 1.2.3，主题文件保持原样。
+
+1.3.0: `#/features/workspace` covers avatars, screenshots, dependency views, the tabbed editor and gradient text. Both editions now link to stable 1.3.0 installers, source archives and checksums. Existing theme assets are unchanged. / 新增可视化与编辑功能说明；双版下载、源码及校验链接同步 1.3.0，主题资源保持原样。
