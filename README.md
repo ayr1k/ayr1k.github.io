@@ -2,9 +2,9 @@
 
 [官方网站 / Website](https://ayr1k.github.io/) · [官方主题商城 / Official theme store](https://ayr1k.github.io/#/themes)
 
-AMBER 与 AmberE 的双语产品网站，提供功能介绍、使用帮助和 1.3.0 正式版下载。主页沿用深绿、琥珀配色与真实产品截图，使用自由滚动；功能与帮助页以阅读为主，不启用滚动吸附。
+AMBER 与 AmberE 的双语产品网站，提供功能介绍、使用帮助和 1.3.1 正式版下载。主页沿用深绿、琥珀配色与真实产品截图，使用自由滚动；功能与帮助页以阅读为主，不启用滚动吸附。
 
-A bilingual website for AMBER and AmberE, with features, guides and stable 1.3.0 downloads. The homepage uses a forest-green/amber palette and actual product screenshots. All pages scroll freely, without scroll snapping.
+A bilingual website for AMBER and AmberE, with features, guides and stable 1.3.1 downloads. The homepage uses a forest-green/amber palette and actual product screenshots. All pages scroll freely, without scroll snapping.
 
 ## 本地开发 / Local development
 
@@ -61,3 +61,5 @@ Language and reduced-motion preferences are saved locally. The site has no analy
 1.2.3: `#/features/modpacks` explains local MRPACK/content ZIP import, format differences and restart recovery. / 新增本地整合包导入说明，解释格式区别与重启恢复。下载页同步 1.2.3，主题文件保持原样。
 
 1.3.0: `#/features/workspace` covers avatars, screenshots, dependency views, the tabbed editor and gradient text. Both editions now link to stable 1.3.0 installers, source archives and checksums. Existing theme assets are unchanged. / 新增可视化与编辑功能说明；双版下载、源码及校验链接同步 1.3.0，主题资源保持原样。
+
+1.3.1: stable paired downloads and selection-based gradient formatting guidance; theme files remain unchanged. / 双版正式下载及渐变选区格式说明同步更新，主题文件不变。
