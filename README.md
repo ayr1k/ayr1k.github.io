@@ -2,9 +2,9 @@
 
 [官方网站 / Website](https://ayr1k.github.io/) · [官方主题商城 / Official theme store](https://ayr1k.github.io/#/themes)
 
-AMBER 与 AmberE 的双语产品网站，提供功能介绍、使用帮助和 1.3.1 正式版下载。主页沿用深绿、琥珀配色与真实产品截图，使用自由滚动；功能与帮助页以阅读为主，不启用滚动吸附。
+AMBER 与 AmberE 的双语产品网站，提供功能介绍、使用帮助和 1.3.5 正式版下载。主页沿用深绿、琥珀配色与真实产品截图，使用自由滚动；功能与帮助页以阅读为主，不启用滚动吸附。
 
-A bilingual website for AMBER and AmberE, with features, guides and stable 1.3.1 downloads. The homepage uses a forest-green/amber palette and actual product screenshots. All pages scroll freely, without scroll snapping.
+A bilingual website for AMBER and AmberE, with features, guides and stable 1.3.5 downloads. The homepage uses a forest-green/amber palette and actual product screenshots. All pages scroll freely, without scroll snapping.
 
 ## 本地开发 / Local development
 
@@ -62,4 +62,8 @@ Language and reduced-motion preferences are saved locally. The site has no analy
 
 1.3.0: `#/features/workspace` covers avatars, screenshots, dependency views, the tabbed editor and gradient text. Both editions now link to stable 1.3.0 installers, source archives and checksums. Existing theme assets are unchanged. / 新增可视化与编辑功能说明；双版下载、源码及校验链接同步 1.3.0，主题资源保持原样。
 
-1.3.1: stable paired downloads and selection-based gradient formatting guidance; theme files remain unchanged. / 双版正式下载及渐变选区格式说明同步更新，主题文件不变。
+1.3.5: stable paired downloads and selection-based gradient formatting guidance; theme files remain unchanged. / 双版正式下载及渐变选区格式说明同步更新，主题文件不变。
+
+## 1.3.5 platform downloads / 多平台下载
+
+`src/DownloadPage.jsx` lists Windows x64 EXE, macOS Intel/Apple Silicon ZIP, Linux x64 DEB and FreeBSD amd64 experimental bundles for both editions. Download URLs are version-pinned. Preserve visible validation labels, unsigned/notarized status and FreeBSD server/tools-only scope. Source/checksum links are product-specific. Deployment follows public release-asset verification.

@@ -1,0 +1,17 @@
+.download-page .download-main{padding-bottom:30px}
+.release-label{font-size:13px;color:var(--muted)}
+.platform-downloads{border-top:1px solid var(--line)}
+.platform-download{display:grid;grid-template-columns:190px minmax(0,1fr) 205px;gap:26px;align-items:start;padding:30px 0;border-bottom:1px solid var(--line)}
+.platform-heading{display:flex;align-items:flex-start;gap:14px;min-width:0}
+.platform-heading>svg{flex-shrink:0;margin-top:3px}
+.platform-heading h3{font-size:22px;margin:0 0 8px}
+.platform-heading span{font-size:13px;color:var(--muted);line-height:1.6}
+.platform-description{min-width:0}
+.platform-status{display:inline-block;color:var(--text);font-size:12px;line-height:1.6;border-left:2px solid var(--green);padding-left:10px;margin-bottom:12px}
+.platform-description p{font-size:14px;color:var(--muted);line-height:1.8;margin:0}
+.platform-actions{display:grid;gap:12px}
+.platform-actions .button{font-size:14px;min-height:48px;padding:13px 14px;gap:10px}
+.platform-actions svg{flex-shrink:0}
+.download-page .download-links{border-top:0}
+@media(max-width:900px){.platform-download{grid-template-columns:170px minmax(0,1fr)}.platform-actions{grid-column:2;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}.download-page .download-main{gap:18px}}
+@media(max-width:580px){.platform-download{grid-template-columns:minmax(0,1fr);gap:20px;padding:26px 0}.platform-actions{grid-column:1}.platform-heading h3{font-size:23px}.platform-description p{font-size:14px}.download-page .download-main h2 span{white-space:nowrap}.download-page .edition-switch{margin-top:28px}}
