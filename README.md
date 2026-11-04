@@ -67,3 +67,7 @@ Language and reduced-motion preferences are saved locally. The site has no analy
 ## 1.3.5 platform downloads / 多平台下载
 
 `src/DownloadPage.jsx` lists Windows x64 EXE, macOS Intel/Apple Silicon ZIP, Linux x64 DEB and FreeBSD amd64 experimental bundles for both editions. Download URLs are version-pinned. Preserve visible validation labels, unsigned/notarized status and FreeBSD server/tools-only scope. Source/checksum links are product-specific. Deployment follows public release-asset verification.
+
+## 1.3.6 publication
+
+Windows downloads, source and checksums point to 1.3.6; macOS/Linux/FreeBSD stay on explicitly labelled 1.3.5 assets and retain their verification limits.
