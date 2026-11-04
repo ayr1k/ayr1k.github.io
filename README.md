@@ -71,3 +71,7 @@ Language and reduced-motion preferences are saved locally. The site has no analy
 ## 1.3.6 publication
 
 Windows downloads, source and checksums point to 1.3.6; macOS/Linux/FreeBSD stay on explicitly labelled 1.3.5 assets and retain their verification limits.
+
+## 1.4.0 publication
+
+Windows installer/source/checksum links target 1.4.0. macOS/Linux/FreeBSD remain explicitly labelled 1.3.5.
