@@ -81,3 +81,6 @@ All platform downloads, full source and checksums target 1.4.1 for both products
 
 ## 1.4.2 publication
 All product/platform download, source and checksum links target 1.4.2. The page describes Quilt/Fabric content compatibility and Sakura Frp. Preserve platform validation limits, public theme assets and AmberX links. Deploy after both releases and their assets are public.
+
+## 1.4.3 publication
+All product/platform downloads, source and checksum links target 1.4.3. Download concurrency, server recycling and themed tool fixes are described in both languages. Deploy after both public releases; preserve theme assets and AmberX links.
