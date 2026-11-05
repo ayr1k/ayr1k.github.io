@@ -78,3 +78,6 @@ Windows installer/source/checksum links target 1.4.0. macOS/Linux/FreeBSD remain
 
 ## 1.4.1 publication
 All platform downloads, full source and checksums target 1.4.1 for both products. Preserve platform validation limits.
+
+## 1.4.2 publication
+All product/platform download, source and checksum links target 1.4.2. The page describes Quilt/Fabric content compatibility and Sakura Frp. Preserve platform validation limits, public theme assets and AmberX links. Deploy after both releases and their assets are public.
