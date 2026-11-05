@@ -75,3 +75,6 @@ Windows downloads, source and checksums point to 1.3.6; macOS/Linux/FreeBSD stay
 ## 1.4.0 publication
 
 Windows installer/source/checksum links target 1.4.0. macOS/Linux/FreeBSD remain explicitly labelled 1.3.5.
+
+## 1.4.1 publication
+All platform downloads, full source and checksums target 1.4.1 for both products. Preserve platform validation limits.
