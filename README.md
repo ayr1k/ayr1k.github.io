@@ -84,3 +84,6 @@ All product/platform download, source and checksum links target 1.4.2. The page 
 
 ## 1.4.3 publication
 All product/platform downloads, source and checksum links target 1.4.3. Download concurrency, server recycling and themed tool fixes are described in both languages. Deploy after both public releases; preserve theme assets and AmberX links.
+
+## 1.4.4 publication
+Paired all-platform downloads, source/checksums and bilingual server update, performance and bandwidth notes. Deploy after both stable releases. Theme assets and AmberX are unchanged.
