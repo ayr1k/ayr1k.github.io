@@ -90,3 +90,6 @@ Paired all-platform downloads, source/checksums and bilingual server update, per
 
 ## 1.4.5 publication
 Paired all-platform downloads, source/checksums and bilingual screenshot viewer/server launch notes. Deploy after both stable releases. Theme assets and AmberX are unchanged.
+
+## 1.4.6 publication
+Paired all-platform download/source/checksum links and bilingual onboarding/import/feedback notes. Deploy after both stable releases are public.
