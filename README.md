@@ -93,3 +93,6 @@ Paired all-platform downloads, source/checksums and bilingual screenshot viewer/
 
 ## 1.4.6 publication
 Paired all-platform download/source/checksum links and bilingual onboarding/import/feedback notes. Deploy after both stable releases are public.
+
+## 1.4.7 publication
+Paired all-platform downloads, full source/checksums and bilingual tray/server-scheduling notes. Deploy after both stable releases are public.
