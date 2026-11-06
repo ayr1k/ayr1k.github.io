@@ -87,3 +87,6 @@ All product/platform downloads, source and checksum links target 1.4.3. Download
 
 ## 1.4.4 publication
 Paired all-platform downloads, source/checksums and bilingual server update, performance and bandwidth notes. Deploy after both stable releases. Theme assets and AmberX are unchanged.
+
+## 1.4.5 publication
+Paired all-platform downloads, source/checksums and bilingual screenshot viewer/server launch notes. Deploy after both stable releases. Theme assets and AmberX are unchanged.
