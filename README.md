@@ -108,3 +108,6 @@ Paired all-platform downloads, source/provenance/checksums and bilingual existin
 
 ## 1.5.2 publication
 Paired all-platform downloads, source/provenance/checksums and bilingual room client synchronization notes. Deploy after both stable releases are public.
+
+## 1.5.3 publication
+Paired all-platform downloads, source/provenance/checksums and bilingual expanded room sharing/recovery notes. Deploy after both stable releases are public.
