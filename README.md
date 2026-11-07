@@ -102,3 +102,6 @@ Paired all-platform downloads, source/checksums and bilingual startup/large-down
 
 ## 1.5.0 publication
 Paired all-platform downloads, source/checksums and bilingual instance-services/account-tools notes. Deploy after both stable releases are public. MySQL remains an optional Windows x64 component.
+
+## 1.5.1 publication
+Paired all-platform downloads, source/provenance/checksums and bilingual existing-installation import notes. Deploy after both stable releases are public.
