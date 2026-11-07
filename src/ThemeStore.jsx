@@ -17,7 +17,7 @@ function Preview({theme,en,onClose}) {
  return <dialog ref={ref} className="theme-preview-dialog" aria-labelledby="preview-title" onCancel={e=>{e.preventDefault();onClose();}} onClick={e=>{if(e.target===e.currentTarget)onClose();}}>
   <div className="theme-preview-top"><h2 id="preview-title">{title}</h2><button autoFocus className="preview-close" onClick={onClose} aria-label={en?'Close preview':'关闭预览'}><X size={24}/></button></div>
   <img src={resource(theme.preview)} width="1280" height="840" alt={en?theme.alt:theme.altZh}/>
-  <p>{en?'Captured in AMBER 1.2.1 with demonstration data. Your instances and records will appear here.':'使用演示数据在 AMBER 1.2.1 中截取。实际界面显示你自己的实例与记录。'}</p>
+  <p>{en?`Captured in AMBER ${theme.previewVersion||theme.version} with demonstration data. Your instances and records will appear here.`:`使用演示数据在 AMBER ${theme.previewVersion||theme.version} 中截取。实际界面显示你自己的实例与记录。`}</p>
  </dialog>;
 }
 

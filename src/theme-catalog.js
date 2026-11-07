@@ -16,5 +16,13 @@ export const officialThemes = [
  {id:'verdant',name:'AMBER Verdant',nameZh:'Verdant · 青岚',version:'1.2.1',minVersion:'1.2.1',size:'4.17 MiB',file:'AMBER-Verdant-1.2.1.ambtheme',preview:'verdant-1.2.1-preview.png',
   descriptionZh:'丛林、河谷与雾中的石桥。青绿色界面采用顶部导航，上方专注启动，下方以连续分区展示日历与新闻；更多内容在分区内滚动。',description:'A jungle river and a stone bridge in the mist. Green tones and top navigation frame launch controls above a continuous calendar and news band, with more content available by section scrolling.',
   tagsZh:['丛林河谷','顶部导航','连续分区'],tags:['Jungle river','Top navigation','Continuous sections'],
-  altZh:'青岚实际首页：丛林石桥背景、顶部导航、上方启动区及下方日历和新闻',alt:'Verdant home with a jungle bridge, top navigation, launch area and a lower calendar and news band'}
+  altZh:'青岚实际首页：丛林石桥背景、顶部导航、上方启动区及下方日历和新闻',alt:'Verdant home with a jungle bridge, top navigation, launch area and a lower calendar and news band'},
+ {id:'sky',name:'AMBER Sky',nameZh:'Sky · 晴空',version:'1.5.3',minVersion:'1.5.3',previewVersion:'1.5.3',size:'3.19 MiB',file:'AMBER-Sky-1.5.3.ambtheme',preview:'sky-1.5.3-preview.png',
+  descriptionZh:'白色与浅蓝映出晴空湖面，白桦与远山陪伴下一次出发。顶部导航搭配独立新闻、日历和最近启动分区，清爽而明亮。',description:'White and pale blue frame a sunlit lake, birch trees and distant mountains. Top navigation, separate news and calendar panels, and recent launches keep the view bright and clear.',
+  tagsZh:['白蓝浅色','晴空湖畔','顶部导航'],tags:['White & pale blue','Sunlit lake','Top navigation'],
+  altZh:'晴空实际首页：白蓝浅色界面、晴空湖面、顶部导航及右侧新闻和日历',alt:'Sky home with white and pale-blue surfaces, a sunlit lake, top navigation and separate news and calendar panels'},
+ {id:'bloom',name:'AMBER Bloom',nameZh:'Bloom · 樱序',version:'1.5.3',minVersion:'1.5.3',previewVersion:'1.5.3',size:'3.07 MiB',file:'AMBER-Bloom-1.5.3.ambtheme',preview:'bloom-1.5.3-preview.png',
+  descriptionZh:'暖白与粉色铺开樱花溪谷，花瓣小径通向新的旅程。左侧导航、中央启动区域与右侧标签分区，让日常操作融入柔和春景。',description:'Warm white and pink open onto a cherry-blossom creek and petal-lined path. Left navigation, central launch controls and right-side utility tabs bring a soft spring setting to everyday play.',
+  tagsZh:['白粉浅色','樱花溪谷','左侧导航'],tags:['White & pink','Cherry-blossom creek','Left navigation'],
+  altZh:'樱序实际首页：暖白粉色界面、樱花溪流与花瓣小径、左侧导航及右侧日历标签',alt:'Bloom home with warm-white and pink surfaces, a cherry-blossom creek and petal path, left navigation and tabbed calendar'}
 ];

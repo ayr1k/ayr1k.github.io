@@ -44,9 +44,13 @@ Alloy、Nocturne、Harvest（秋野）与 Verdant（青岚）预览来自 AMBER 
 
 Alloy, Nocturne, Harvest and Verdant previews show the AMBER 1.2.1 release build with isolated demonstration instances. All four are separate downloads for AMBER and AmberE 1.2.1. Harvest uses left navigation and right-side tabs; Verdant uses top navigation and a lower calendar/news band. Shorter windows use section scrolling for additional content. The classic appearance illustration on home remains from 1.2.0. Brand and Sarasa font notices are retained.
 
-Harvest 与 Verdant 的背景为艺术化生成插画，非游戏实拍。主题配置采用 MPL-2.0，背景在适用权利范围内采用 CC BY 4.0，详见各主题包内的 LICENSE.txt。
+Sky（晴空）与 Bloom（樱序）为白蓝与白粉浅色主题，适配 AMBER / AmberE 1.5.3。预览来自 1.5.3 实际界面及隔离的演示实例；已在两款产品中验证导入、保存恢复和五种窗口尺寸。商城使用用户验收过的原始主题包，仅将下载文件名移除 `-preview`，包内容与 SHA-256 不变。
 
-Harvest and Verdant backgrounds are generated artwork, not in-game captures. Theme configuration uses MPL-2.0; background artwork is offered under CC BY 4.0 to the extent rights apply. See LICENSE.txt in each package.
+Sky and Bloom add white/pale-blue and white/pink themes for AMBER / AmberE 1.5.3. Previews show the actual 1.5.3 interface with isolated demonstration data. Import, persistence, recovery and five window sizes were checked in both products. Published packages preserve the user-accepted bytes; only the download filenames lose the `-preview` suffix. The preview dialog reports the capture version per theme.
+
+Harvest、Verdant、Sky 与 Bloom 的背景为艺术化生成插画，非游戏实拍。主题配置采用 MPL-2.0，背景在适用权利范围内采用 CC BY 4.0，详见各主题包内的 LICENSE.txt。
+
+Harvest, Verdant, Sky and Bloom backgrounds are generated artwork, not in-game captures. Theme configuration uses MPL-2.0; background artwork is offered under CC BY 4.0 to the extent rights apply. See LICENSE.txt in each package.
 
 ## 内容维护 / Content maintenance
 
