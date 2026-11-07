@@ -105,3 +105,6 @@ Paired all-platform downloads, source/checksums and bilingual instance-services/
 
 ## 1.5.1 publication
 Paired all-platform downloads, source/provenance/checksums and bilingual existing-installation import notes. Deploy after both stable releases are public.
+
+## 1.5.2 publication
+Paired all-platform downloads, source/provenance/checksums and bilingual room client synchronization notes. Deploy after both stable releases are public.
