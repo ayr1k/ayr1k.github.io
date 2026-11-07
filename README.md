@@ -115,3 +115,6 @@ Paired all-platform downloads, source/provenance/checksums and bilingual room cl
 
 ## 1.5.3 publication
 Paired all-platform downloads, source/provenance/checksums and bilingual expanded room sharing/recovery notes. Deploy after both stable releases are public.
+
+## 1.5.4 publication
+Paired all-platform downloads, source/provenance/checksums and bilingual protected storage maintenance and filtered-list notes. Deploy after both stable releases are public. Preserve all six theme packages, previews and catalog versions.
