@@ -130,3 +130,6 @@ The store separates six official themes from independently credited artist artwo
 
 ## 1.6.2 publication
 Paired all-platform downloads, source/provenance/checksums and bilingual structure-navigation/marker/scan-status notes. Deploy after both stable releases are public. Preserve six official themes and the independent artist collection, including all accepted package bytes and credits.
+
+## 1.6.3 publication
+Paired all-platform downloads, source/provenance/checksums and bilingual instance-editor comparison, backup and session-draft notes. Deploy after both stable releases are public. Preserve all seven theme packages, independent artist attribution and permanent community acknowledgements.
