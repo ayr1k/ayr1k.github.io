@@ -121,3 +121,6 @@ Paired all-platform downloads, source/provenance/checksums and bilingual protect
 
 ## 1.6.0 publication
 Paired all-platform downloads, source/provenance/checksums and bilingual launch-plan, component-choice and scoped memory notes. Deploy after both stable releases are public. Preserve all six theme packages, previews and catalog versions.
+
+## 1.6.1 publication
+Paired all-platform downloads, source/provenance/checksums and bilingual map/gradient/editor notes. Deploy after both stable releases are public. Preserve all six theme packages, previews and catalog versions.
