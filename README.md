@@ -127,3 +127,6 @@ Paired all-platform downloads, source/provenance/checksums and bilingual map/gra
 
 ## Independent artist themes
 The store separates six official themes from independently credited artist artwork. Woodland Reverie II preserves the user-accepted v2 package unchanged. Artwork: Yaoaoin (CC BY-NC, version unspecified), with specific theme-background permission reported by the project owner. Theme design: AMBER. Public attribution notes distinguish the earlier local-review stage from this authorized publication.
+
+## 1.6.2 publication
+Paired all-platform downloads, source/provenance/checksums and bilingual structure-navigation/marker/scan-status notes. Deploy after both stable releases are public. Preserve six official themes and the independent artist collection, including all accepted package bytes and credits.
