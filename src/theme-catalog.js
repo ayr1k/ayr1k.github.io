@@ -26,3 +26,14 @@ export const officialThemes = [
   tagsZh:['白粉浅色','樱花溪谷','左侧导航'],tags:['White & pink','Cherry-blossom creek','Left navigation'],
   altZh:'樱序实际首页：暖白粉色界面、樱花溪流与花瓣小径、左侧导航及右侧日历标签',alt:'Bloom home with warm-white and pink surfaces, a cherry-blossom creek and petal path, left navigation and tabbed calendar'}
 ];
+
+// Independently credited artwork; these entries are separate from official themes.
+export const artistThemes = [
+ {id:'woodland',name:'Woodland Reverie II',nameZh:'林间守望 II',version:'1.6.1 · v2',minVersion:'1.6.1',previewVersion:'1.6.1',size:'6.13 MiB',file:'AMBER-Woodland-1.6.1-v2.ambtheme',preview:'woodland-1.6.1-v2-preview.png',
+  artist:'Yaoaoin',credits:'woodland-credits.txt',
+  descriptionZh:'白桦林、远山与静坐的铁傀儡。Yaoaoin 的画作铺满背景，深林绿半透明面板与柔金色控件承接画面；布局参考 Nocturne，并为可读性调整。',description:'Birches, distant peaks and an iron golem at rest. Yaoaoin’s painting fills the background beneath translucent forest-green panels and soft gold controls. A Nocturne-inspired layout is adjusted for readability.',
+  creditZh:'画作：Yaoaoin · 主题制作：AMBER',credit:'Artwork: Yaoaoin · Theme design: AMBER',
+  licenseZh:'画作：CC BY-NC。按项目负责人提供的信息，已获作者专门许可用作主题背景；具体许可版本未提供。配置采用 MPL-2.0，画作保留原许可。',license:'Artwork: CC BY-NC. The project owner reports specific artist permission for use as a theme background; the license version was not supplied. Configuration is MPL-2.0; the artwork retains its own license.',
+  tagsZh:['Yaoaoin 画作','深林绿与柔金','Nocturne 灵感'],tags:['Art by Yaoaoin','Forest green & gold','Inspired by Nocturne'],
+  altZh:'林间守望 II 实际界面：Yaoaoin 的白桦林铁傀儡画作背景、深绿半透明面板、柔金色按钮、右侧新闻与日历',alt:'Woodland Reverie II with Yaoaoin’s birch-forest and iron-golem painting, translucent green panels, gold controls, news and calendar'}
+];

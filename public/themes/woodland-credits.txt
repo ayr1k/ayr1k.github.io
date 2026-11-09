@@ -1,0 +1,16 @@
+Woodland Reverie II / 林间守望 II
+
+Artwork / 画作：Yaoaoin
+Theme design and packaging / 主题设计与打包：AMBER
+
+The artwork is CC BY-NC according to the information supplied by the project owner, who also reports specific permission from Yaoaoin for use as a theme background. The license version and original publication URL were not supplied; no version, URL, commercial permission or artist endorsement is inferred. Keep the artist credit and noncommercial restriction. Theme configuration is MPL-2.0; that license does not apply to the artwork.
+
+按项目负责人提供的信息，画作采用 CC BY-NC，并已获 Yaoaoin 专门许可作为主题背景。具体许可版本及原始发布链接未提供，不推定额外商业许可或艺术家为软件背书。请保留署名与非商业限制。主题配置采用 MPL-2.0，此许可不覆盖画作。
+
+The original painting was not repainted or recolored. The standard AMBER importer proportionally converted the 6400 × 3600 JPEG to a 2560 × 1440 PNG. The application adds translucent interface layers. The preview uses synthetic demonstration data from the 1.6.1 application build with an isolated Electron runtime.
+
+原画没有重绘或改色；仅经 AMBER 现有导入流程等比转换为 PNG，应用叠加半透明界面。预览来自 1.6.1 构建内容、隔离 Electron 运行时及合成演示数据。
+
+This public download preserves the exact bytes of the user-accepted second review package. Its embedded local-review description records the earlier delivery stage. The user subsequently approved publication in the website's independent artist section. No extra permissions are granted by publication.
+
+本下载原样保留用户验收的第二版主题包。包内“本地验收”说明记录此前交付阶段；用户随后已批准在官网非官方艺术家专区上架。上架不增加原许可范围。
