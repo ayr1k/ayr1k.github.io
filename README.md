@@ -133,3 +133,6 @@ Paired all-platform downloads, source/provenance/checksums and bilingual structu
 
 ## 1.6.3 publication
 Paired all-platform downloads, source/provenance/checksums and bilingual instance-editor comparison, backup and session-draft notes. Deploy after both stable releases are public. Preserve all seven theme packages, independent artist attribution and permanent community acknowledgements.
+
+## 1.6.4 publication
+Paired all-platform downloads, source/provenance/checksums and bilingual default-off prelaunch memory/cancellation notes. Deploy after both stable releases are public. Preserve all seven themes, independent artist attribution and permanent community acknowledgements.
