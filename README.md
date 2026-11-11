@@ -136,3 +136,6 @@ Paired all-platform downloads, source/provenance/checksums and bilingual instanc
 
 ## 1.6.4 publication
 Paired all-platform downloads, source/provenance/checksums and bilingual default-off prelaunch memory/cancellation notes. Deploy after both stable releases are public. Preserve all seven themes, independent artist attribution and permanent community acknowledgements.
+
+## 1.7.0 publication
+Paired all-platform downloads, source/provenance/checksums and bilingual initial-storage/multiple-library/external-recovery notes. Deploy after both stable releases are public. Preserve all seven themes, artist attribution and permanent acknowledgements, including @岩熵 (UID 1616300586).
