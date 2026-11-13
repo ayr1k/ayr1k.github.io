@@ -142,3 +142,6 @@ Paired all-platform downloads, source/provenance/checksums and bilingual initial
 
 ## 1.7.1 publication
 Paired all-platform downloads, source/provenance/checksums and bilingual native-library routing/layout repair notes. Deploy after both stable releases are public. Preserve all seven themes, artist attribution and permanent community acknowledgements.
+
+## 1.7.2 publication
+Paired all-platform downloads, source/provenance/checksums and bilingual server-address copy/theme-store shortcut notes. Deploy after both stable releases are public. Preserve all seven themes, artist attribution and permanent community acknowledgements.
