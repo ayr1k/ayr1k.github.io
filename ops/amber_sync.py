@@ -183,7 +183,14 @@ class GitHub:
         raise SyncError("GITHUB_UNAVAILABLE")
 
     def json(self, path):
-        require(path.startswith("/repos/") and ".." not in path, "BAD_API_PATH")
+        # Only the website's SHA-to-SHA comparison may contain consecutive dots.
+        # Do not relax this to a substring check: traversal must remain rejected.
+        comparison = re.fullmatch(
+            rf"/repos/{re.escape(WEBSITE)}/compare/[a-f0-9]{{40}}\.\.\.[a-f0-9]{{40}}", path)
+        require(path.startswith("/repos/") and
+                not any(c in path for c in "%\\#") and
+                not any(ord(c) < 33 or ord(c) == 127 for c in path) and
+                (".." not in path or comparison is not None), "BAD_API_PATH")
         cachefile = self.cache / (hashlib.sha256(path.encode()).hexdigest() + ".json")
         cached = json.loads(cachefile.read_text()) if cachefile.exists() else None
         headers = {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}
@@ -682,4 +689,7 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    # Run through the same module identity imported by the build/storage helpers.
+    # The second module load defines symbols only; the command executes once.
+    from amber_sync import main as canonical_main
+    sys.exit(canonical_main())

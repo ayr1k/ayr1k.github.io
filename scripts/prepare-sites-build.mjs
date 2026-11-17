@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { verifyStaticAssets } from "./verify-static-assets.mjs";
 import { copyFileSync, existsSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -17,5 +18,7 @@ mkdirSync(path.join(dist, "server"), { recursive: true });
 mkdirSync(path.join(dist, ".openai"), { recursive: true });
 copyFileSync(worker, path.join(dist, "server", "index.js"));
 copyFileSync(hosting, path.join(dist, ".openai", "hosting.json"));
+
+verifyStaticAssets(root);
 
 console.log("Prepared Sites build: dist/server/index.js and dist/.openai/hosting.json");

@@ -378,6 +378,29 @@ class ValidationTests(unittest.TestCase):
         with self.assertRaises(sync.SyncError):
             sync.select_releases([release])
 
+    def test_api_compare_path_and_traversal_guard(self):
+        with tempfile.TemporaryDirectory() as directory:
+            api = sync.GitHub(Path(directory))
+            response = unittest.mock.MagicMock()
+            response.__enter__.return_value = response
+            response.read.return_value = b'{"status":"ahead"}'
+            response.headers = {}
+            compare = f"/repos/{sync.WEBSITE}/compare/{'a' * 40}...{'b' * 40}"
+            with patch.object(api, "open", return_value=response) as opened:
+                self.assertEqual(api.json(compare), {"status": "ahead"})
+                self.assertEqual(opened.call_args.args[0], "https://api.github.com" + compare)
+                for path in ("/repos/a/b/../secrets", compare + "/../secrets",
+                             compare + "?x=../secrets", compare.replace("...", ".."),
+                             compare.replace("a" * 40, "main"),
+                             "/repos/a/b/%2e%2e/secrets", "/repos/a/b/%252e%252e/secrets",
+                             "/repos/a/b/\\..\\secrets", "/repos/a/b/branches/main#x",
+                             "/repos/a/b/branches/main\n", "https://evil.test/repos/a/b"):
+                    with self.subTest(path=path):
+                        opened.reset_mock()
+                        with self.assertRaisesRegex(sync.SyncError, "BAD_API_PATH"):
+                            api.json(path)
+                        opened.assert_not_called()
+
     def test_api_pagination_and_limit(self):
         with tempfile.TemporaryDirectory() as directory:
             api = sync.GitHub(Path(directory))

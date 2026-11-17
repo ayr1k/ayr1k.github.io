@@ -4,7 +4,7 @@ import React,{useEffect,useState} from 'react';
 import {Home} from './Home.jsx';
 import {ThemeStore} from './ThemeStore.jsx';
 import {ArrowRight,ArrowDown,ArrowUpRight,Cube,PuzzlePiece,Stack,WindowsLogo,List,X,Check,DownloadSimple,PaintBrush,CalendarBlank,Toolbox} from '@phosphor-icons/react';
-const asset=n=>`${import.meta.env.BASE_URL}assets/${n}`;
+import { asset } from './assets.js';
 const repo='https://github.com/ayr1k/amber-launcher';
 const version='1.7.5';
 const themeFile=n=>`${import.meta.env.BASE_URL}themes/${n}`;
