@@ -13,6 +13,8 @@ root = Path(__file__).resolve().parents[1]
 text = '\n'.join(path.read_text(encoding='utf-8-sig') for path in (root / 'src').rglob('*') if path.suffix in ('.jsx', '.js'))
 text += (root / 'index.html').read_text(encoding='utf-8-sig')
 text += ''.join(chr(i) for i in range(32, 127))
+output = root / 'src/assets'
+output.mkdir(parents=True, exist_ok=True)
 for weight in ('Regular', 'Bold'):
     font = TTFont(source / f'SarasaUiSC-{weight}.woff2')
     options = subset.Options()
@@ -21,5 +23,5 @@ for weight in ('Regular', 'Bold'):
     subsetter = subset.Subsetter(options=options)
     subsetter.populate(text=text)
     subsetter.subset(font)
-    font.save(root / 'public/assets' / f'AmberWeb-{weight}.woff2')
+    font.save(output / f'AmberWeb-{weight}.woff2')
 

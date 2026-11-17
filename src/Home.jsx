@@ -1,6 +1,6 @@
 import React from 'react';
 import {ArrowUpRight,ArrowRight,DownloadSimple,Cube,PuzzlePiece,Database, CaretDown} from '@phosphor-icons/react';
-const asset=n=>`${import.meta.env.BASE_URL}assets/${n}`;
+import { asset } from './assets.js';
 const highlights=[
  {id:'create',icon:Cube,title:['引导创建','Guided creation'],body:['从你想怎么玩开始。选择合适的版本与加载器，查看推荐方案，再决定安装什么。','Start with how you want to play. Review versions, loaders and recommendations before choosing what to install.']},
  {id:'content',icon:PuzzlePiece,title:['内容管理','Content management'],body:['模组、资源包与光影集中管理。按版本寻找内容，批量启停，让更新井然有序。','Keep mods, resource packs and shaders together. Find compatible files, manage them in batches and stay on top of updates.']},

@@ -1,2 +1,5 @@
 # Download checksums describe exact bytes, regardless of checkout platform.
 public/themes/* -text
+# Static baselines and UI fingerprints must retain repository bytes on Windows too.
+public/** -text
+src/assets/** -text
