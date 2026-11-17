@@ -327,6 +327,25 @@ class SyncTests(unittest.TestCase):
 
 
 class ValidationTests(unittest.TestCase):
+    def test_source_pins_skips_binary_ui_assets_and_retains_text_links(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            assets = root / "src/assets"
+            assets.mkdir(parents=True)
+            (root / "src/download-catalog.json").write_text(json.dumps({
+                product: {"repo": repo, "version": "1.7.5"}
+                for product, repo in sync.PRODUCTS.items()}), encoding="utf-8")
+            for extension in ("woff2", "webp", "PNG"):
+                (assets / ("example." + extension)).write_bytes(b"\x80\xff/v9.9.9")
+            (root / "src/App.jsx").write_text('const previous = "/v1.7.4";', encoding="utf-8")
+            (assets / "example.svg").write_text('<svg><a href="/v1.7.3"/></svg>', encoding="utf-8")
+            self.assertEqual(site.source_pins(root), {
+                product: ["1.7.3", "1.7.4", "1.7.5"] for product in sync.PRODUCTS})
+            # Do not silently ignore corrupt text source when protecting old releases.
+            (root / "src/Bad.jsx").write_bytes(b"\x80\xff/v1.7.2")
+            with self.assertRaises(UnicodeDecodeError):
+                site.source_pins(root)
+
     def test_actual_public_174_metadata_matches_supported_schema(self):
         data = json.loads((Path(__file__).parent / "releases-1.7.4.json").read_text())
         self.assertEqual(set(data), set(sync.PRODUCTS))

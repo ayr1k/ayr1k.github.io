@@ -67,8 +67,11 @@ def source_pins(source):
         require(entry["repo"] == PRODUCTS[product], "CATALOG_PRODUCT_MISMATCH")
         key(entry["version"])
     # Protect literal historical release links elsewhere in the site as well.
+    # Vite-managed UI images/fonts now live under src; they are not UTF-8 source.
+    binary_assets = {".woff", ".woff2", ".ttf", ".otf", ".png", ".jpg", ".jpeg",
+                     ".webp", ".avif", ".gif", ".ico"}
     for path in (source / "src").rglob("*"):
-        if path.is_file():
+        if path.is_file() and path.suffix.lower() not in binary_assets:
             for version in re.findall(r"(?:/v|\bv)(\d+\.\d+\.\d+)\b", path.read_text(encoding="utf-8")):
                 for product in PRODUCTS:
                     pins[product].add(version)
