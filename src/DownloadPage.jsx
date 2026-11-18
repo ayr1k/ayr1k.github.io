@@ -37,7 +37,7 @@ export function DownloadPage({en,product}) {
  return <section className="page download-page">
   <span className="eyebrow">DOWNLOAD / {version}</span>
   <h1>{t('选择你的版本，开始下一次冒险。','Choose your edition. Start your next adventure.')}</h1>
-  <p className="lede">{t("1.7.5：启动器更新可选择 GitHub 全球源或官方香港镜像；更新源与通道独立设置，依据 GitHub 元数据校验下载，安全取消后可切换来源。","1.7.5: Choose GitHub global or the official Hong Kong mirror for launcher updates. Keep source and channel independent, verify downloads against GitHub metadata, and cancel safely before switching sources.")}</p>
+  <p className="lede">{t("1.7.6：支持导入最高 5 GB 的本地 ZIP64 整合包，Modrinth 和 CurseForge 内容来源可选择自动或官方。", "1.7.6: Import local ZIP64 modpacks up to 5 GB and choose automatic or official content sources for Modrinth and CurseForge.")}</p>
   <nav className="edition-switch" aria-label={t('产品版本','Product edition')}>
    {['AMBER','AmberE'].map(name=><a key={name} href={'#/download'+(name==='AmberE'?'?product=ambere':'')} aria-current={product===name?'page':undefined}>{name}</a>)}
   </nav>

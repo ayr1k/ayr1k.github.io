@@ -163,3 +163,7 @@ Paired all-platform downloads, source/provenance/checksums and bilingual update-
 UI fonts, logos, textures and screenshots belong in `src/assets`, not `public/assets`. Vite fingerprints their output URLs; `src/assets.js` resolves UI references and CSS uses relative imports. The build rejects fixed-name UI additions and missing or changed emitted bytes. Keep the Sarasa license at its existing public URL. Theme downloads remain separately versioned, with their existing URLs and SHA-256 unchanged. Publication still rejects same-name/different-byte historical assets and retains old asset bytes for open pages.
 
 The build also freezes every existing public download/legal file in `scripts/public-static-baseline.json`. New versioned downloads or deliberate public metadata changes require an explicit baseline review; never overwrite an existing released theme to clear the check. UI resource names use the first 16 hex digits of their SHA-256, verified against source bytes. Extra output and fixed UI URL references fail the build. Git attributes preserve exact public/UI asset bytes across checkout platforms, including Windows line-ending settings. This protects against accidental changes, not an adversary who can modify the verifier/configuration itself.
+
+## 1.7.6 publication
+
+Paired stable downloads and bilingual documentation for local ZIP64 imports and official content sources.
