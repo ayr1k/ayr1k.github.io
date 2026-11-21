@@ -37,7 +37,7 @@ export function DownloadPage({en,product}) {
  return <section className="page download-page">
   <span className="eyebrow">DOWNLOAD / {version}</span>
   <h1>{t('选择你的版本，开始下一次冒险。','Choose your edition. Start your next adventure.')}</h1>
-  <p className="lede">{t("1.7.6：支持导入最高 5 GB 的本地 ZIP64 整合包，Modrinth 和 CurseForge 内容来源可选择自动或官方。", "1.7.6: Import local ZIP64 modpacks up to 5 GB and choose automatic or official content sources for Modrinth and CurseForge.")}</p>
+  <p className="lede">{t("1.7.7 EasyTier 主持与加入房间的指引更清晰。Sakura Frp 会说明无法创建隧道的原因，并支持保留草稿切换节点。", "1.7.7 Host or join EasyTier rooms with clearer guidance. Sakura Frp shows why tunnel creation is blocked and lets you switch nodes without losing your draft.")}</p>
   <nav className="edition-switch" aria-label={t('产品版本','Product edition')}>
    {['AMBER','AmberE'].map(name=><a key={name} href={'#/download'+(name==='AmberE'?'?product=ambere':'')} aria-current={product===name?'page':undefined}>{name}</a>)}
   </nav>

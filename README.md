@@ -167,3 +167,7 @@ The build also freezes every existing public download/legal file in `scripts/pub
 ## 1.7.6 publication
 
 Paired stable downloads and bilingual documentation for local ZIP64 imports and official content sources.
+
+## 1.7.7 publication
+
+Paired stable downloads and bilingual notes for EasyTier room guidance and Sakura Frp tunnel creation.
