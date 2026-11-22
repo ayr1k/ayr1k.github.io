@@ -24,7 +24,7 @@ const suffixes = ['Setup-x64.exe','mac-x64.zip','mac-arm64.zip','linux-x64.deb',
 const index = {schema:1,products:{}};
 for (const [product, repo] of [['AMBER','ayr1k/amber-launcher'],['AmberE','ayr1k/AmberE']]) {
   index.products[product] = {repo,versions:{}};
-  for (const version of ['1.7.8','1.7.9']) {
+  for (const version of ['1.7.9','1.8.0']) {
     index.products[product].versions[version] = {files:Object.fromEntries(suffixes.map(suffix => {
       const name = `${product}-${version}-${suffix}`;
       return [name,{size:123,sha256:'a'.repeat(64),path:`/mirror/v1/${product.toLowerCase()}/${version}/${name}`}];
@@ -46,12 +46,12 @@ try {
     const links=await page.locator('.platform-actions a').evaluateAll(nodes=>nodes.map(a=>a.href));
     assert.equal(links.length,10);
     for(const suffix of suffixes){
-      const name=`${product}-1.7.8-${suffix}`;
-      assert.ok(links.some(url=>url===`https://github.com/${index.products[product].repo}/releases/download/v1.7.8/${name}`));
-      assert.ok(links.some(url=>url===`https://amber.ayuki-ayr1k.com/mirror/v1/${product.toLowerCase()}/1.7.8/${name}`));
+      const name=`${product}-1.7.9-${suffix}`;
+      assert.ok(links.some(url=>url===`https://github.com/${index.products[product].repo}/releases/download/v1.7.9/${name}`));
+      assert.ok(links.some(url=>url===`https://amber.ayuki-ayr1k.com/mirror/v1/${product.toLowerCase()}/1.7.9/${name}`));
       assertions+=2;
     }
-    assert.ok(links.every(url=>!url.includes('1.7.9')));
+    assert.ok(links.every(url=>!url.includes('1.8.0')));
     assert.equal(await page.locator('.platform-download').count(),4);
     assert.equal(await page.locator('html').getAttribute('lang'),lang==='en'?'en':'zh-CN');
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
@@ -63,8 +63,8 @@ try {
     await page.route('https://amber.ayuki-ayr1k.com/**',async route=>{
       if(scenario==='api-failure') return route.fulfill({status:503,headers:{'access-control-allow-origin':'*'}});
       const data=structuredClone(index);
-      if(scenario==='different-version') delete data.products.AMBER.versions['1.7.8'];
-      if(scenario==='partial-platforms') delete data.products.AMBER.versions['1.7.8'].files['AMBER-1.7.8-mac-arm64.zip'];
+      if(scenario==='different-version') delete data.products.AMBER.versions['1.7.9'];
+      if(scenario==='partial-platforms') delete data.products.AMBER.versions['1.7.9'].files['AMBER-1.7.9-mac-arm64.zip'];
       return route.fulfill(route.request().method()==='HEAD'?{
         status:scenario==='missing-mirror'?404:200,headers:{'content-length':'123','access-control-allow-origin':'*'}
       }:{status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},body:JSON.stringify(data)});

@@ -175,3 +175,7 @@ Paired stable downloads and bilingual notes for EasyTier room guidance and Sakur
 ## 1.7.8 publication
 
 Paired stable downloads and bilingual notes for per-task download diagnostics.
+
+## 1.7.9 publication
+
+Paired stable downloads and bilingual notes for existing .minecraft imports and Java preparation.
