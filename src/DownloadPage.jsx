@@ -37,7 +37,7 @@ export function DownloadPage({en,product}) {
  return <section className="page download-page">
   <span className="eyebrow">DOWNLOAD / {version}</span>
   <h1>{t('选择你的版本，开始下一次冒险。','Choose your edition. Start your next adventure.')}</h1>
-  <p className="lede">{t("1.7.7 EasyTier 主持与加入房间的指引更清晰。Sakura Frp 会说明无法创建隧道的原因，并支持保留草稿切换节点。", "1.7.7 Host or join EasyTier rooms with clearer guidance. Sakura Frp shows why tunnel creation is blocked and lets you switch nodes without losing your draft.")}</p>
+  <p className="lede">{t("1.7.8 在任务中心展开下载诊断，查看单个下载最近 60 秒的传输速度与实际连接信息。", "1.7.8 Open Download diagnostics in Tasks to see the last 60 seconds of transfer speed and observed connection details for each download.")}</p>
   <nav className="edition-switch" aria-label={t('产品版本','Product edition')}>
    {['AMBER','AmberE'].map(name=><a key={name} href={'#/download'+(name==='AmberE'?'?product=ambere':'')} aria-current={product===name?'page':undefined}>{name}</a>)}
   </nav>
