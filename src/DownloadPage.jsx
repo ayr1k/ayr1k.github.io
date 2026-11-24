@@ -37,7 +37,7 @@ export function DownloadPage({en,product}) {
  return <section className="page download-page">
   <span className="eyebrow">DOWNLOAD / {version}</span>
   <h1>{t('选择你的版本，开始下一次冒险。','Choose your edition. Start your next adventure.')}</h1>
-  <p className="lede">{t("1.7.9 改进已有 .minecraft 实例导入、PCL 配置识别，以及 Forge 和 NeoForge 的 Java 准备。", "1.7.9 Import existing .minecraft instances with improved PCL profile detection and verified Java preparation for Forge and NeoForge.")}</p>
+  <p className="lede">{t("1.7.10 减少实例数据的重复读取，按需刷新启动状态，降低空闲和下载时的后台 CPU 占用。", "1.7.10 Reduce background CPU use during idle and downloads by reading less instance data and refreshing launch status when needed.")}</p>
   <nav className="edition-switch" aria-label={t('产品版本','Product edition')}>
    {['AMBER','AmberE'].map(name=><a key={name} href={'#/download'+(name==='AmberE'?'?product=ambere':'')} aria-current={product===name?'page':undefined}>{name}</a>)}
   </nav>

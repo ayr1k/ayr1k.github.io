@@ -179,3 +179,7 @@ Paired stable downloads and bilingual notes for per-task download diagnostics.
 ## 1.7.9 publication
 
 Paired stable downloads and bilingual notes for existing .minecraft imports and Java preparation.
+
+## 1.7.10 publication
+
+Paired stable downloads and bilingual notes for runtime CPU and status refresh improvements.
